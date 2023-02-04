@@ -9,7 +9,7 @@ import raft from "./assets/raft.svg";
 import equilibria from "./assets/equilibria.svg";
 import cardinal from "./assets/cardinal.svg";
 import logoicon from "./assets/logo-icon.svg";
-import rightPath from "./assets/right-path.png";
+import rightPath from "./assets/right-path.svg";
 
 import Animation from "./components/Animation";
 import Button from "./components/Button";
@@ -31,7 +31,7 @@ function App() {
       </div>
 
       <div className="flex justify-end">
-        <img src={rightPath} alt="are we on the right path?" className="w-2/3 md:full mr-12" />
+        <img src={rightPath} alt="are we on the right path?" className="w-2/3 md:full mr-16" />
       </div>
 
       <div className="flex justify-center overflow-hidden">
