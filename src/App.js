@@ -9,6 +9,7 @@ import raft from "./assets/raft.svg";
 import equilibria from "./assets/equilibria.svg";
 import cardinal from "./assets/cardinal.svg";
 import logoicon from "./assets/logo-icon.svg";
+import rightPath from "./assets/right-path.png";
 
 import Animation from "./components/Animation";
 import Button from "./components/Button";
@@ -22,34 +23,28 @@ function App() {
 
   return (
     <div className="mx-auto max-w-screen-2xl overflow-hidden">
-      <div className="relative overflow-hidden mb-[-500px] md:mb-[-350px] lg:mb-[-200px]">
-        <div className="z-[0] -scale-y-100 rotate-180 relative overflow-hidden h-[900px] lg:h-[800px] top-[-450px] md:top-[-275px] lg:top-[-125px] bg-black">
-          <div className="z-[0] overflow-hidden absolute left-[40%] top-0 w-[1300px] h-[900px] lg:h-[800px] rounded-tl-full round-bl-2xl bg-white" />
-        </div>
+      <div className="fixed overflow-hidden">
 
-        <div className="absolute top-3 left-1 md:left-4 lg:left-8">
-          <img src={logo} alt="" className="w-1/3 md:w-full" />
-        </div>
-
-        <div className="flex justify-center absolute top-[200px] md:top-[285px] lg:top-[300px] left-[20%] min-[450px]:left-[22%] min-[475px]:left-[25%] min-[525px]:left-[26%] min-[555px]:left-[28%] min-[615px]:left-[30%] sm:left-[31%] min-[675px]:left-[33%] min-[750px]:left-[35%] md:left-[28%] min-[855px]:left-[32%] min-[980px]:left-[33%] min-[1100px]:left-[35%] min-[1200px]:left-[37%]">
-          <h1 className="split-h1">
-            Are we on
-            <br />
-            the right path?
-          </h1>
-        </div>
-
-        <div className="flex justify-center overflow-hidden">
-          <div
-            ref={circleInstance}
-            className="rotating-text text-[#DCB012] text-sm md:text-lg lg:text-xl md:tracking-wider mt-20 md:mt-28 absolute top-0"
-          >
-            Republican • Democrat • Economy • Climate • Hunger • War • Democracy
-            • Communism • God • Spirituality • Anger • Kindess • Right • Left •
-            Education •
-          </div>
+        <div className="top-3 left-1 md:left-4 lg:left-8">
+          <img src={logo} alt="path logo" className="w-1/3 md:w-full" />
         </div>
       </div>
+
+      <div className="flex justify-end">
+        <img src={rightPath} alt="are we on the right path?" className="w-2/3 md:full mr-12" />
+      </div>
+
+      <div className="flex justify-center overflow-hidden">
+        <div
+          ref={circleInstance}
+          className="rotating-text text-[#D0A710] text-sm md:text-lg lg:text-xl md:tracking-wider mt-20 md:mt-48 absolute top-0"
+        >
+          Republican • Democrat • Economy • Climate • Hunger • War • Democracy
+          • Communism • God • Spirituality • Anger • Kindess • Right • Left •
+          Education •
+        </div>
+      </div>
+
 
       <div className="px-5 md:px-10 pb-44 md:pb-64">
         <div className="mt-24 md:mt-40">
